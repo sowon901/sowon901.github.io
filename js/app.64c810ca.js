@@ -368,7 +368,19 @@
                         c("span", [A._v("MySQL")]),
                       ]),
 
+                      c("li", [
+                        c("div", [
+                          c("img", { attrs: { src: t("70d4"), alt: "logo" } }),
+                        ]),
+                        c("span", [A._v("HTML")]),
+                      ]),
                     
+                      c("li", [
+                        c("div", [
+                          c("img", { attrs: { src: t("2804"), alt: "logo" } }),
+                        ]),
+                        c("span", [A._v("CSS")]),
+                      ]),
 
                 ]),
               ]),
@@ -416,6 +428,7 @@
                   date: A.date[c],
                   type: A.type[c],
                   git: A.git[c],
+                  topic: A.topic[c],
                   what: A.what[c],
                   stack: A.stack[c],
                   site: A.site[c],
@@ -437,10 +450,19 @@
               c("span", [A._v(A._s(A.title))]),
               c("span", [A._v(A._s(A.date))]),
             ]),
+
+        
             c("div", [
-              c("img", { attrs: { src: t("2f6b"), alt: "logo" } }),
-              c("a", { attrs: { href: A.git } }, [A._v("Github")]),
-            ]),
+                c("img", { attrs: { src: t("2f6b"), alt: "logo" }, style: {width: "30px", height: "30px", marginRight: "6px"} }),
+                c("a", { attrs: { href: A.git } }, [A._v("Github")]),
+              ]),
+
+
+    
+                 
+
+            
+
             c("div", [
               c("a", { attrs: { href: A.site, target: "_blank" } }, [
                 c("img", {
@@ -451,10 +473,17 @@
           ]),
           c("div", { staticClass: "right" }, [
             c("p", [A._v(A._s(A.type))]),
+
+            c("div", { staticClass: "desc" }, [
+                c("p", [A._v("Topic")]),
+                c("pre", [A._v(A._s(A.topic))]),
+              ]),
+
             c("div", { staticClass: "desc" }, [
               c("p", [A._v("What I did")]),
               c("pre", [A._v(A._s(A.what))]),
             ]),
+
             c("div", { staticClass: "desc" }, [
               c("p", [A._v("Stack")]),
               c("p", [A._v(A._s(A.stack))]),
@@ -464,7 +493,7 @@
       },
       k = [],
       T = {
-        props: ["title", "date", "img", "git", "type", "what", "stack", "site"],
+        props: ["title", "date", "img", "git", "notion", "type", "topic", "what", "stack", "site"],
       },
       B = T,
       Q = (t("385b"), Object(o["a"])(B, z, k, !1, null, null, null)),
@@ -475,7 +504,7 @@
         data: function () {
           return {
             len: 4,
-            tit: ["꿀단지", "WMS", "와앙"],
+            tit: ["꿀단지", "SSGSSAG", "와앙"],
             date: [
               "2024.04 ~ 2024.06",
               "2024.02 ~ 2024.04",
@@ -492,13 +521,23 @@
               "https://github.com/SsgStudy/SSGSSAG-PROJECT",
               "https://github.com/sowon901/2021_Waang",
             ],
+            notion: [
+                "https://www.notion.so/1e899b89bb18804797c9cb683532a1df",
+                "https://www.notion.so/Bee-d03cbe54805d45b7ae64c7f1cea6310e",
+            ],
+            topic: [
+                "아이돌 중고 상품 경매를 안전하게 도와주는 웹 서비스",
+                "WMS 창고 관리 웹 서비스",
+                "성신여대 예비 졸업생들의 졸업을 도와주는 앱 서비스"
+            ],
+
             what: [
               "레이아웃 디자인\n메인페이지, 결제 기능 구현, 상세페이지 프론트엔드 구현",
               "레이아웃 디자인\n회원 관리 기능 백엔드 및 프론트엔드 구현",
               "레이아웃 디자인\n졸업 요건 및 학점 계산 기능 구현",
             ],
             stack: [
-              "SpringBoot, Vue, MySQL",
+              "SpringBoot, Vue.js, MySQL",
               "SpringBoot, JSP, Thymeleaf, MySQL",
               "Java, Xml, SQLite, Firebase",
             ],

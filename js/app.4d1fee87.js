@@ -242,7 +242,7 @@
                   ]),
                   c("li", [
                     c("div", [
-                      c("img", { attrs: { src: t("2f6b"), alt: "icon" } }),
+                      c("img", { attrs: { src: t("51fd"), alt: "icon" } }),
                     ]),
                     c("span", [A._v("github.com/sowon901")]),
                   ]),
